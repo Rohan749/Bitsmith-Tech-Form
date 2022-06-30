@@ -30,7 +30,7 @@
 }
 
 /* For Responsive webpage  */
-@media (max-width: 850px) {
+@media (max-width: 850px), (max-height: 535px) {
   .App {
     display: block;
     height: fit-content;
