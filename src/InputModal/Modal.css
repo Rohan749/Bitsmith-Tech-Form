@@ -1,0 +1,72 @@
+* {
+    color: rgb(119, 119, 119);
+    font-weight: 425;
+}
+
+/* Form */
+.form__box {
+    margin-top: 3rem;
+    height: fit-content;
+}
+
+.boxes {
+    margin-top: 1rem;
+}
+
+.icon {
+    margin: 2rem;
+}
+
+/* Input */
+.input {
+    margin: 0.6rem;
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: 0%;
+    outline: none;
+    border: 0.1px solid rgb(220, 220, 220);
+}
+
+/* Button: Enabled */
+.button-box:enabled {
+    background-color: blue;
+    color: rgb(238, 247, 255);
+    width: 13rem;
+    height: 2.4rem;
+    border: none;
+    box-shadow: 0px 3px 10px 1px rgb(171, 171, 171);
+    transition-duration: 0.2s;
+    
+}
+
+/* Button: Disabled */
+.button-box:disabled {
+    background-color: rgb(224, 224, 224);
+    box-shadow: none;
+    width: 13rem;
+    height: 2.4rem;
+    border: none;
+}
+
+.button-box:hover:enabled {
+    box-shadow: 0px 5px 15px 2px rgb(171, 171, 171);
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    accent-color: blue;
+  }
+
+/* Responsive Webpage */
+@media (max-width: 850px) {
+    /* i for individual icons */
+    .i {
+        margin: 1rem;
+    }
+    .form__box {
+        padding: 5%;
+    }
+    .modal-box {
+        padding-bottom: 2rem;
+    }
+}

@@ -1,0 +1,35 @@
+.describe__box {
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+/* Heading */
+h1 {
+    font-size: 3.1rem;
+}
+
+/* First half of the heading with different color */
+.nav1 {
+    color: rgb(64, 64, 64);
+}
+
+/* Second half of the heading */
+.nav2 {
+    color: rgb(0, 0, 255);
+}
+
+/* Paragraph */
+.para {
+    font-weight: 400;
+    color: rgb(134, 134, 134);
+}
+
+/* For Responsive webpage */
+@media (max-width: 850px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .describe__box {
+        padding: 1rem;
+    }
+}
