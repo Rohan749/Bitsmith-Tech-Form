@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaFacebookF, FaTwitter, FaGoogle, FaGithub } from 'react-icons/fa';
 import "./Modal.css"
 
@@ -10,6 +10,14 @@ const Modal = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [formValid, setFormValid] = useState(false);
+
+  useEffect(()=> {
+
+    // For checking the validity of email address after each input.
+    if (email.includes('@' && '.com')) setFormValid(true);
+    else setFormValid(false); 
+
+  }, [email])
 
   // Storing the First name.
   const firstChangeHandler = (event) => {
@@ -24,10 +32,6 @@ const Modal = () => {
   // Storing Email.
   const emailChangeHandler = (event) => {
     setEmail(event.target.value);
-
-    // For checking the validity of email address after each input.
-    if (event.target.value.includes('@' && '.com')) setFormValid(true);
-    else setFormValid(false);
   }
 
   // Storing Password.
